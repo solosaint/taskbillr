@@ -15,8 +15,8 @@
 #   inflect.acronym 'RESTful'
 # end
 Rails.configuration.stripe = {
-  :publishable_key => ENV['PUBLISHABLE_KEY'],
-  :secret_key      => ENV['SECRET_KEY']
+  :publishable_key => ENV['pk_test_11TTQKlZ0MTBm8FrgGBPWISa'],
+  :secret_key      => ENV['sk_test_U5PRwMaEHOI0zRXBoewq9wzm']
 }
 
 Stripe.api_key = Rails.configuration.stripe[:secret_key]
