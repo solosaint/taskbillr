@@ -15,7 +15,7 @@
 #   inflect.acronym 'RESTful'
 # end
 Rails.configuration.stripe = {
-  :publishable_key => ENV['pk_test_11TTQKlZ0MTBm8FrgGBPWISa'],
+  :STRIPE_PUBLIC_KEY => ENV['pk_test_11TTQKlZ0MTBm8FrgGBPWISa'],
   :secret_key      => ENV['sk_test_U5PRwMaEHOI0zRXBoewq9wzm']
 }
 
