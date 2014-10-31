@@ -2,6 +2,7 @@ require "monban/constraints/signed_in"
 require "monban/constraints/signed_out"
 
 Rails.application.routes.draw do
+  resources :charges
   resource :session, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create]
   resources :tasks, only: [:create, :destroy] do 
