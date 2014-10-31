@@ -1,0 +1,10 @@
+<% if object.errors.any? %>
+  <p>Could not save <%= object.class.to_s.downcase %></p>
+  <ul>
+    <% object.errors.full_messages.each do |error| %>
+      <li>
+        <%= error %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

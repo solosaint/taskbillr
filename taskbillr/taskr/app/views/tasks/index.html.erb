@@ -1,6 +1,6 @@
-<div id="errors"></div>
-
 <h1><%= current_user.name %>'s Tasks</h1>
+
+<p id="errors"></p>
 
 <h4>Add a task</h4>
 <%= form_for @task do |f| %>
@@ -8,7 +8,6 @@
   <%= f.text_field :content %>
   <%= f.submit %>
 <% end %>
-
 
 
 <ul id="task-list">

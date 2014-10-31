@@ -9,7 +9,7 @@ class TasksController < ApplicationController
     if @task.save
       render @task
     else 
-      head 422
+      render partial: "application/form_errors", status: 422, locals: { object: @task }
     end
   end
 
