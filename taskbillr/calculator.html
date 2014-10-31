@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+  <script>
+    function calculate() {
+      var numberOne = Number(document.getElementById("number1").value);
+      var operation = document.getElementById("operation").value;
+      var numberTwo = Number(document.getElementById("number2").value);
+      var answer = document.getElementById("answer");
+      var result;
+
+    console.log(numberOne);
+    console.log(operation);
+    console.log(numberTwo);
+    console.log(answer);
+
+
+      if(operation==="+"){
+        result = numberOne + numberTwo;
+      }
+      else if(operation==="-"){
+        result = numberOne - numberTwo;
+      }
+      else if(operation==="*"){
+        result = numberOne * numberTwo;
+      }
+      else if(operation==="/"){
+        result = numberOne / numberTwo;
+      }
+
+      answer.value = result;
+    }
+  </script>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form id="calculator" onsubmit="calculate(); return false;" >
+      <label for="number1">First Number:</label>
+      <input type="number" id="number1" value = "">
+
+      <label for="operation">Operation:</label>
+      <input type="text" id="operation" value = "">
+
+      <label for="number2">Second Number:</label>
+      <input type="number" id="number2" value = "">
+
+      <input type="submit">
+
+      <label for="answer">Result: </label>
+      <input type="number" id="answer" value = "">
+    </form>
+
+  </body>
+</html>
